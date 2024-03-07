@@ -1,0 +1,63 @@
+
+
+
+<!-- Main page of the application -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dating App and Calculator</title>
+</head>
+<body>
+<h1>Welcome to the Dating App and Calculator</h1>
+
+<div id="dating-app">
+<h2>Dating App</h2>
+<!-- Form for user preferences -->
+<form action="/dating" method="post">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+
+<label for="age">Age:</label>
+<input type="number" name="age" id="age">
+
+<label for="gender">Gender:</label>
+<select name="gender" id="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="non-binary">Non-binary</option>
+</select>
+
+<label for="preferences">Preferences:</label>
+<input type="text" name="preferences" id="preferences">
+
+<input type="submit" value="Find Matches">
+</form>
+</div>
+
+<div id="calculator">
+<h2>Calculator</h2>
+<!-- Form for calculator input -->
+<form action="/calculator" method="post">
+<label for="num1">First Number:</label>
+<input type="number" name="num1" id="num1">
+
+<label for="num2">Second Number:</label>
+<input type="number" name="num2" id="num2">
+
+<label for="operation">Operation:</label>
+<select name="operation" id="operation">
+<option value="add">Add</option>
+<option value="subtract">Subtract</option>
+<option value="multiply">Multiply</option>
+<option value="divide">Divide</option>
+</select>
+
+<input type="submit" value="Calculate">
+</form>
+</div>
+</body>
+</html>
+
